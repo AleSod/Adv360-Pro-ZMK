@@ -3,6 +3,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
+#define DEFAULT 0
+#define LOWER   1
+#define RAISE   2
 
 / {
     behaviors {
@@ -22,23 +25,13 @@
   keymap {
     compatible = "zmk,keymap";
 
-    default_layer {
-      bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                           &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
-        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
-        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &none &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
-        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
-      >;
-    };
-
     layer_colemak_dh {
       bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                           &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
-        &kp TAB   &kp Q   &kp W   &kp F   &kp P   &kp B             &to 3                                                  &trans   &kp J   &kp L      &kp U       &kp Y  &kp SEMICOLON  &trans
-        &kp ESC   &kp A   &kp R   &kp S   &kp T   &kp G            &trans  &trans  &trans                  &trans  &trans  &trans   &kp M   &kp N      &kp E       &kp I          &kp O  &trans
-        &kp LSHFT   &kp Z   &kp X   &kp C   &kp D   &kp V                            &trans                  &trans                   &kp K   &kp H  &kp COMMA  &kp PERIOD      &kp SLASH  &trans
-        &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans     &trans      &trans         &trans  &trans
+        &kp EQUAL &kp N1    &kp N2     &kp N3   &kp N4  &kp N5 &none                                                                               &none    &kp N6  &kp N7     &kp N8      &kp N9      &kp N0         &kp MINUS
+        &kp TAB   &kp Q     &kp W      &kp F    &kp P   &kp B  &none                                                                               &none    &kp J   &kp L      &kp U       &kp Y       &kp SEMICOLON  &kp LBKT
+        &kp ESC   &kp A     &kp R      &kp S    &kp T   &kp G  &none              &kp LCTRL &kp LALT                   &kp LMETA  &kp RCTRL        &none    &kp M   &kp N      &kp E       &kp I       &kp O          &kp SQT
+        &kp LSHFT &kp Z     &kp X      &kp C    &kp D   &kp V                               &mo RAISE                  &mo RAISE                            &kp K   &kp H      &kp COMMA   &kp PERIOD  &kp SLASH      &kp RSHFT
+        &none     &kp EXCL  &kp GRAVE  &kp SQT  &kp DQT                  &kp BSPC &kp DEL   &mo LOWER                  &mo LOWER  &kp ENTER &kp SPACE               &kp BSLH   &kp PIPE    &kp SLASH   &kp AMPS       &none
       >;
     };
 
