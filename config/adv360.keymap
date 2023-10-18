@@ -31,7 +31,7 @@
         &kp TAB   &kp Q     &kp W      &kp F    &kp P   &kp B  &none                                                                               &none    &kp J   &kp L      &kp U       &kp Y       &kp SEMICOLON  &kp LBKT
         &kp ESC   &kp A     &kp R      &kp S    &kp T   &kp G  &none              &kp LCTRL &kp LALT                   &kp LMETA  &kp RCTRL        &none    &kp M   &kp N      &kp E       &kp I       &kp O          &kp SQT
         &kp LSHFT &kp Z     &kp X      &kp C    &kp D   &kp V                               &mo RAISE                  &mo RAISE                            &kp K   &kp H      &kp COMMA   &kp PERIOD  &kp SLASH      &kp RSHFT
-        &LCTRL    &kp EXCL  &kp GRAVE  &kp SQT  &kp DQT                  &kp BSPC &kp DEL   &mo LOWER                  &mo LOWER  &kp ENTER &kp SPACE               &kp BSLH   &kp PIPE    &kp SLASH   &kp AMPS       &RCTRL
+        &kp LCTRL &kp EXCL  &kp GRAVE  &kp SQT  &kp DQT                  &kp BSPC &kp DEL   &mo LOWER                  &mo LOWER  &kp ENTER &kp SPACE               &kp BSLH   &kp PIPE    &kp SLASH   &kp AMPS       &kp RCTRL
       >;
     };
 
