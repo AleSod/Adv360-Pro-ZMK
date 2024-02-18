@@ -37,20 +37,20 @@
 
     layer_colemak_dh {
       bindings = <
-        &kp MINUS &kp N1      &kp N2     &kp N3      &kp N4      &kp N5 &none                                                             &mo SYSTEM &kp N6  &kp N7      &kp N8      &kp N9      &kp N0         &kp EQUAL
-        &kp TAB   &kp Q       &kp W      &kp F       &kp P       &kp B  &none                                                             &none      &kp J   &kp L       &kp U       &kp Y       &kp SEMICOLON  &kp LBKT
-        &kp ESC   &hm LMETA A &hm LALT R &hm LCTRL S &hm LSHFT T &kp G  &none    &mo NAV &kp LALT                   &kp LMETA  &mo SYMBOL &none      &kp M   &hm RSHFT N &hm RCTRL E &hm RALT I  &hm RMETA O    &kp SQT
-        &kp LSHFT &kp Z       &kp X      &kp C       &kp D       &kp V                   &mo RAISE                  &mo RAISE                        &kp K   &kp H       &kp COMMA   &kp PERIOD  &kp SLASH      &kp RSHFT
-        &kp LCTRL &kp EXCL    &kp GRAVE  &kp SQT     &kp DQT            &kp BSPC &kp DEL &mo LOWER                  &mo LOWER  &kp ENTER  &kp SPACE          &kp BSLH    &kp PIPE    &kp SLASH   &kp AMPS       &kp RCTRL
+        &kp MINUS &kp N1      &kp N2     &kp N3      &kp N4      &kp N5 &none                                            &mo SYSTEM &kp N6  &kp N7      &kp N8      &kp N9      &kp N0         &kp EQUAL
+        &kp TAB   &kp Q       &kp W      &kp F       &kp P       &kp B  &none                                            &none      &kp J   &kp L       &kp U       &kp Y       &kp SEMICOLON  &kp LBKT
+        &kp ESC   &hm LMETA A &hm LALT R &hm LCTRL S &hm LSHFT T &kp G  &none    &mo NAV &kp LALT  &kp LMETA  &mo SYMBOL &none      &kp M   &hm RSHFT N &hm RCTRL E &hm RALT I  &hm RMETA O    &kp SQT
+        &kp LSHFT &kp Z       &kp X      &kp C       &kp D       &kp V                   &mo RAISE &mo RAISE                        &kp K   &kp H       &kp COMMA   &kp PERIOD  &kp SLASH      &kp RSHFT
+        &kp LCTRL &kp EXCL    &kp GRAVE  &kp SQT     &kp DQT            &kp BSPC &kp DEL &mo LOWER &mo LOWER  &kp ENTER  &kp SPACE          &kp BSLH    &kp PIPE    &kp SLASH   &kp AMPS       &kp RCTRL
       >;
     };
 
     keypad {
       bindings = <
         &trans &kp N1         &kp N2      &kp N3         &kp N4         &kp N5     &none                                          &trans &kp N6          &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &trans
-        &trans &kp EQUAL      &kp MINUS   &kp NUBS       &kp PIPE2      &kp SLASH  &none                                          &none  &kp KP_MINUS    &kp N7     &kp N8    &kp N9     &kp DLLR    &trans
-        &trans &hm LMETA LBKT &hm LALT LT &hm LCTRL LBRC &hm LSHFT LPAR &kp DQT    &none    &kp LCTRL &kp LALT &kp LGUI &kp RCTRL &none  &kp KP_PLUS     &kp N4     &kp N5    &kp N6     &kp N0     &trans
-        &trans &kp RBKT       &kp GT      &kp RBRC       &kp RPAR       &kp SQT                       &trans   &trans                    &kp KP_MULTIPLY &kp N1     &kp N2    &kp N3     &kp SLASH    &trans
+        &trans &kp EQUAL      &kp MINUS   &kp NUBS       &kp PIPE2      &kp SLASH  &none                                          &none  &kp KP_MINUS    &kp N7     &kp N8       &kp N9        &kp DLLR        &trans
+        &trans &hm LMETA LBKT &hm LALT LT &hm LCTRL LBRC &hm LSHFT LPAR &kp DQT    &none    &kp LCTRL &kp LALT &kp LGUI &kp RCTRL &none  &kp KP_PLUS     &kp N4     &kp N5       &kp N6        &kp N0          &trans
+        &trans &kp RBKT       &kp GT      &kp RBRC       &kp RPAR       &kp SQT                       &trans   &trans                    &kp KP_MULTIPLY &kp N1     &kp N2       &kp N3        &kp SLASH       &trans
         &trans &kp GRAVE      &kp CAPS    &kp LEFT       &kp RIGHT                 &kp BSPC &kp DEL   &trans   &trans   &kp ENTER &kp KP_N0              &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &trans
       >;
     };
