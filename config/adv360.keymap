@@ -39,8 +39,8 @@
       bindings = <
         &kp MINUS &kp N1      &kp N2     &kp N3      &kp N4      &kp N5 &none                                              &mo SYSTEM    &kp N6  &kp N7      &kp N8      &kp N9      &kp N0         &kp EQUAL
         &kp TAB   &kp Q       &kp W      &kp F       &kp P       &kp B  &kp CARET                                          &kp DOLLAR    &kp J   &kp L       &kp U       &kp Y       &kp SEMICOLON  &kp LBKT
-        &kp ESC   &hm LMETA A &hm LALT R &hm LCTRL S &hm LSHFT T &kp G  &kp EAQUAL &mo NAV &kp LALT  &kp LMETA  &mo SYMBOL &kp SEMICOLON &kp M   &hm RSHFT N &hm RCTRL E &hm RALT I  &hm RMETA O    &kp SQT
-        &kp LSHFT &kp Z       &kp X      &kp C       &kp D       &kp V                     &none     &none                               &kp K   &kp H       &kp COMMA   &kp PERIOD  &kp SLASH      &kp RSHFT
+        &kp ESC   &hm LMETA A &hm LALT R &hm LCTRL S &hm LSHFT T &kp G  &kp EAQUAL &mo NAV &kp MINUS &kp PLUS   &mo SYMBOL &kp SEMICOLON &kp M   &hm RSHFT N &hm RCTRL E &hm RALT I  &hm RMETA O    &kp SQT
+        &kp LSHFT &kp Z       &kp X      &kp C       &kp D       &kp V                     &kp TILDE &kp STAR                            &kp K   &kp H       &kp COMMA   &kp PERIOD  &kp SLASH      &kp RSHFT
         &kp LCTRL &kp EXCL    &kp GRAVE  &kp SQT     &kp DQT            &kp BSPC   &kp DEL &none     &none      &kp ENTER  &kp SPACE             &kp BSLH    &kp PIPE    &kp SLASH   &kp AMPS       &kp RCTRL
       >;
     };
